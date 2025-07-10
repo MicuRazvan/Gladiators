@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://i.pinimg.com/originals/03/bb/97/03bb97b14a553b80c79982b2ffd03b9d.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="front.ControllerTournament">
+   <children>
+      <Label fx:id="p1" layoutX="33.0" layoutY="80.0" text="Player1" textFill="#d9091b">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p2" layoutX="31.0" layoutY="145.0" text="Player 2" textFill="#0932e5">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p3" layoutX="33.0" layoutY="232.0" text="Player3" textFill="#1811ef">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p4" layoutX="33.0" layoutY="312.0" text="Player4" textFill="#1e0bdb">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p6" layoutX="517.0" layoutY="145.0" text="Player6" textFill="#0f1cd9">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p7" layoutX="517.0" layoutY="232.0" text="Player7" textFill="#460de0">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p8" layoutX="517.0" layoutY="312.0" text="Player8" textFill="#1312e0">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="p5" layoutX="517.0" layoutY="80.0" text="Player5" textFill="#1113d4">
+         <font>
+            <Font name="Arial Narrow Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="wl" layoutX="305.0" layoutY="183.0" text="LOSE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8473282222074406" endY="0.27862592325865765" startX="0.16412213103461812" startY="0.4389312613101406">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25957435369491577" green="0.8399999737739563" blue="0.11760000139474869" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line fx:id="line1" endX="66.60000610351562" endY="109.60000610351562" startX="346.1212463378906" startY="207.50714111328125" stroke="#6422ea" />
+      <Line fx:id="line2" endX="67.39999389648438" endY="174.60000610351562" startX="346.1212463378906" startY="207.50714111328125" stroke="WHITE" />
+      <Line fx:id="line3" endX="344.0" endY="206.8000030517578" layoutX="4.0" layoutY="1.0" startX="63.0" startY="238.0" stroke="WHITE" />
+      <Line fx:id="line4" endX="345.4141845703125" endY="208.21424865722656" startX="70.29289245605469" startY="319.0928955078125" stroke="WHITE" />
+      <Line fx:id="line5" endX="550.6000366210938" endY="109.60000610351562" startX="348.6000061035156" startY="207.79998779296875" stroke="WHITE" />
+      <Line fx:id="line6" endX="550.5999755859375" endY="174.59999084472656" startX="346.82830810546875" startY="208.21426391601562" stroke="WHITE" />
+      <Line fx:id="line7" endX="558.5" endY="242.3000030517578" startX="338.29290771484375" startY="208.21426391601562" stroke="WHITE" />
+      <Line fx:id="line8" endX="558.5" endY="320.29998779296875" startX="346.1212158203125" startY="208.92138671875" stroke="WHITE" />
+      <Button layoutX="338.0" layoutY="342.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+   </children>
+</AnchorPane>

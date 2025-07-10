@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="pane" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" style="-fx-background-image: url(&quot;https://i.pinimg.com/originals/b5/4c/c9/b54cc9b5e448713f49b62185dd1375af.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="front.ControllerStart">
+   <children>
+      <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="20.0" layoutY="284.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onCampaignButtonClick" prefHeight="108.0" prefWidth="113.0" text="Expedition" />
+      <Button layoutX="20.0" layoutY="170.0" mnemonicParsing="false" onAction="#onDuelButtonClick" prefHeight="108.0" prefWidth="113.0" text="Duel" />
+      <Button layoutX="20.0" layoutY="49.0" mnemonicParsing="false" onAction="#onTournamentButtonClick" prefHeight="108.0" prefWidth="113.0" text="Tournament" />
+      <Button layoutX="219.0" layoutY="354.0" mnemonicParsing="false" onAction="#onLoadButtonClick" prefHeight="33.0" prefWidth="72.0" text="Load" />
+      <Button layoutX="144.0" layoutY="354.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="33.0" prefWidth="72.0" text="Save" />
+      <ImageView fx:id="img" fitHeight="400.0" fitWidth="200.0" layoutX="300.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../a.png" />
+         </image></ImageView>
+      <ChoiceBox fx:id="choiceBoxG" layoutX="300.0" layoutY="20.0" onAction="#onSwitchMenu" prefWidth="150.0" />
+      <Label fx:id="helmet" layoutX="550.0" layoutY="130.0" text="Helmet : Lvl 0" textFill="#d90d0d">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="chest" layoutX="550.0" layoutY="180.0" text="Chest : Lvl 0" textFill="#e41616">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="weapon" layoutX="550.0" layoutY="220.0" text="Weapon: Lvl 0" textFill="#d90e0e">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="boots" layoutX="550.0" layoutY="270.0" text="Boots : Lvl 0" textFill="#ea0a0a">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Name" layoutX="350.0" layoutY="80.0" onMouseClicked="#onLabelNameClick" text="none" textFill="#ef1010">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="level" layoutX="200.0" layoutY="140.0" text="level 0" textFill="#d91b1b">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="HP" layoutX="200.0" layoutY="200.0" text="HP : 0" textFill="#d90a0a">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="power" layoutX="180.0" layoutY="250.0" text="Power: none" textFill="#e40e0e">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="SP" layoutX="200.0" layoutY="300.0" text="SP : 0" textFill="#e40707">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="480.0" layoutY="20.0" mnemonicParsing="false" text="Add new Gladiator">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#onAddArcherButton" text="Add New Archer" />
+           <MenuItem mnemonicParsing="false" onAction="#onAddFighterButton" text="Add New Fighter" />
+           <MenuItem mnemonicParsing="false" onAction="#onAddAssasinButton" text="Add New Assasin" />
+           <MenuItem mnemonicParsing="false" onAction="#onAddBrutalButton" text="Add New Brutal" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="textt" layoutX="300.0" layoutY="80.0" onAction="#onTextBox" />
+
+   </children>
+</Pane>

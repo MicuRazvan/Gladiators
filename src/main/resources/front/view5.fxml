@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://www.quietspeculation.com/wp-content/uploads/2021/01/MistyRainforest.jpg&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="front.ControllerCampaign">
+   <children>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="wl" layoutX="110.0" layoutY="20.0" text="Win">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.20992364956222415" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20901371538639069" green="0.058800000697374344" blue="0.49000000953674316" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Button layoutX="250.0" layoutY="320.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <Label fx:id="Name" layoutX="221.0" layoutY="88.0" text="Name">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.04580149941771994">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.75789475440979" green="0.061754386872053146" blue="0.061754386872053146" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-image: url(&quot;https://img.freepik.com/free-vector/two-roman-armored-warriors-fighting-with-swords-arena-cartoon-illustration-gladiator-fight-colosseum-battlefield-ancient-rome-greece-ancient-history-culture-battle-concept_74855-16528.jpg?w=1060&amp;t=st=1653738811~exp=1653739411~hmac=8ffcfd1381261ef4ac3c256101f703fba99752813109f4d343275c5b11581efa&quot;) url(&quot;https://img.freepik.com/free-vector/two-roman-armored-warriors-fighting-with-swords-arena-cartoon-illustration-gladiator-fight-colosseum-battlefield-ancient-rome-greece-ancient-history-culture-battle-concept_74855-16528.jpg?w=1060&amp;t=st=1653738811~exp=1653739411~hmac=8ffcfd1381261ef4ac3c256101f703fba99752813109f4d343275c5b11581efa&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="front.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="Start" />
+   <Label mouseTransparent="true" text="Gladiatorii" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+      <font>
+         <Font name="Castellar" size="48.0" />
+      </font>
+      <effect>
+         <Lighting>
+            <bumpInput>
+               <Shadow />
+            </bumpInput>
+            <light>
+               <Light.Distant />
+            </light>
+         </Lighting>
+      </effect>
+      <textFill>
+         <RadialGradient centerX="0.7333333333333333" centerY="0.7328243692412632" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.38497111201286316" green="0.05000000074505806" blue="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.3664470314979553" green="1.0" blue="0.3199999928474426" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+   </Label>
+    <Button onAction="#onStartButtonClick" text="Start" textFill="#070f1c">
+      <font>
+         <Font name="Corbel Bold Italic" size="24.0" />
+      </font></Button>
+    <Button onAction="#onLoadButtonClick" text="Load">
+      <font>
+         <Font name="Corbel Bold Italic" size="24.0" />
+      </font></Button>
+    <Button onAction="#onOptionsButtonClick" text="Options">
+      <font>
+         <Font name="Corbel Bold Italic" size="24.0" />
+      </font></Button>
+    <Button onAction="#onExitButtonClick" text="Exit">
+      <font>
+         <Font name="Corbel Bold Italic" size="24.0" />
+      </font></Button>
+
+</VBox>
